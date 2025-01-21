@@ -1,0 +1,162 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "CDuce",
+	"scopeName": "source.cduce",
+	"fileTypes": [
+		"cduce"
+	],
+	"patterns": [
+		{
+			"match": "\\b(let|in|type|match|with|fun|rec|if|then|else|true|false|and|or|not|as|when|try|raise|of|open|module|end)\\b",
+			"name": "keyword.control.cduce"
+		},
+		{
+			"match": "\\b(int|string|bool|char|xml|unit|list|option|ref|pair|function|record|array|variant|tuple)\\b",
+			"name": "storage.type.cduce"
+		},
+		{
+			"match": "\\b[A-Za-z_][A-Za-z0-9_-]*\\b(?=\\()",
+			"name": "variable.function.cduce"
+		},
+		{
+			"match": "\\b[A-Za-z_][A-Za-z0-9_-]*\\b(?=\\s*\\()",
+			"name": "variable.parameter.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*=)",
+			"name": "variable.assignment.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*\\.)",
+			"name": "variable.property.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*\\[)",
+			"name": "variable.index.cduce"
+		},
+		{
+			"match": "<\\/?[A-Za-z_][A-Za-z0-9_-]*>",
+			"name": "entity.name.tag.cduce"
+		},
+		{
+			"match": "<[A-Za-z_][A-Za-z0-9_-]*\\s*(?:[A-Za-z_][A-Za-z0-9_-]*\\s*=\\s*[^>]+\\s*)*>",
+			"name": "entity.name.tag.attributes.cduce"
+		},
+		{
+			"match": "\".*?\"",
+			"name": "string.quoted.double.cduce"
+		},
+		{
+			"match": "'[A-Za-z0-9]'",
+			"name": "string.quoted.single.cduce"
+		},
+		{
+			"match": "\\b[0-9]+(\\.[0-9]+)?\\b",
+			"name": "constant.numeric.cduce"
+		},
+		{
+			"match": "#.*$",
+			"name": "comment.line.cduce"
+		},
+		{
+			"match": "\\btrue\\b|\\bfalse\\b",
+			"name": "constant.language.boolean.cduce"
+		},
+		{
+			"match": "\\bunit\\b",
+			"name": "constant.language.unit.cduce"
+		},
+		{
+			"match": "\\bNone\\b|\\bSome\\b",
+			"name": "constant.language.option.cduce"
+		},
+		{
+			"match": "\\bref\\b",
+			"name": "keyword.other.ref.cduce"
+		},
+		{
+			"match": "\\bpair\\b",
+			"name": "keyword.other.pair.cduce"
+		},
+		{
+			"match": "\\brecord\\b",
+			"name": "keyword.other.record.cduce"
+		},
+		{
+			"match": "\\barray\\b",
+			"name": "keyword.other.array.cduce"
+		},
+		{
+			"match": "\\bvariant\\b",
+			"name": "keyword.other.variant.cduce"
+		},
+		{
+			"match": "\\btuple\\b",
+			"name": "keyword.other.tuple.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*\\{)",
+			"name": "variable.record.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*\\[)",
+			"name": "variable.array.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*\\|)",
+			"name": "variable.variant.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*=>)",
+			"name": "variable.function.arrow.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*->)",
+			"name": "variable.function.arrow.cduce"
+		},
+		{
+			"match": "\\bmatch\\b",
+			"name": "keyword.control.match.cduce"
+		},
+		{
+			"match": "\\bwith\\b",
+			"name": "keyword.control.with.cduce"
+		},
+		{
+			"match": "\\btry\\b|\\braise\\b",
+			"name": "keyword.control.try.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*\\?)",
+			"name": "variable.optional.cduce"
+		},
+		{
+			"match": "\\bmodule\\b",
+			"name": "keyword.module.cduce"
+		},
+		{
+			"match": "(->|=>|\\||&|=|\\+|\\-|\\*|/|<|>|<=|>=|!=|:=|\\^|~|::|%|#|\\?)",
+			"name": "keyword.operator.cduce"
+		},
+		{
+			"match": "\\b\\[\\]\\b|\\b::\\b",
+			"name": "constant.language.list.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*\\.)",
+			"name": "variable.module.cduce"
+		},
+		{
+			"match": "\\bbegin\\b|\\bend\\b",
+			"name": "keyword.control.begin-end.cduce"
+		},
+		{
+			"match": "(\\b[A-Za-z_][A-Za-z0-9_-]*\\b)(?=\\s*::)",
+			"name": "variable.type.cduce"
+		},
+		{
+			"match": "#.*$",
+			"name": "comment.line.cduce"
+		}
+	]
+}
