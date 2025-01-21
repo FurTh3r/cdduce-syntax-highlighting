@@ -4,24 +4,37 @@
   "description": "Syntax highlighting for the CDuce programming language in Visual Studio Code.",
   "version": "0.0.1",
   "publisher": "FurTh3r",
-  "icon": "icon.jpg",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.96.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FurTh3r/cdduce-syntax-highlighting.git"
   },
   "categories": [
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "cd",
-      "aliases": ["CDuce", "cd"],
-      "extensions": [".cd"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "cd",
-      "scopeName": "source.cduce",
-      "path": "./syntaxes/cd.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "cd",
+        "aliases": [
+          "CDuce",
+          "cd"
+        ],
+        "extensions": [
+          ".cd"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cd",
+        "scopeName": "source.cduce",
+        "path": "./syntaxes/cd.tmLanguage.json"
+      }
+    ]
   }
 }
