@@ -1,8 +1,8 @@
 {
   "name": "cduce-syntax-highlighting",
-  "displayName": "CDuce Syntax Highlighting",
+  "displayName": "CDuce",
   "description": "Syntax highlighting for the CDuce programming language in Visual Studio Code.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "FurTh3r",
   "icon": "icon.png",
   "engines": {
