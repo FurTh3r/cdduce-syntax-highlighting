@@ -8,12 +8,8 @@
 	"patterns": [
 		{
             "name": "comment.block.cduce",
-            "begin": "(?<!\\S)##",
-            "end": "##(?!\\S)"
-        },
-        {
-            "name": "comment.line.cduce",
-            "match": "#.*"
+            "begin": "(?<!\\S)*)",
+            "end": "(*(?!\\S)"
         },
 		{
 			"match": "\\b(let|in|type|match|with|fun|rec|if|then|else|true|false|and|or|not|as|when|try|raise|of|open|module|end)\\b",
